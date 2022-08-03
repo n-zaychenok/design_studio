@@ -1,2 +1,2 @@
 # design_studio
- главная страница дизайн-студии (марафон_2022)
+ main page of design-studio (maraphon_2022)
