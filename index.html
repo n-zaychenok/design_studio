@@ -5,125 +5,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCANDI</title>
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="page-header">
-        <img src="img/bedroom_background.jpg" alt="Комод в спальной комнате с предметами декора" width="1416" height="715">
+        <!--<img src="img/bedroom_background.jpg" alt="Комод рядом с кроватью с предметами декора:
+         вазой с сухими цветами, статуэткой, настольным зеркалм, книгами" class="header-image" width="1416" height="715">-->        
         <div class="content-container">
+            <a class="logo">
+                <img src="img/logo.png" alt="Логотип студии дизайна" width="25" height="25"> 
+                SCANDI
+            </a>
             <nav class="menu">
                 <ul class="menu-list">
-                    <li class="menu-item">
-                        <img src="img/logo.png" alt="Логотип студии дизайна" width="25" height="25"> 
-                        <a href="#" class="item-link">SCANDI</a>
-                    </li>
                     <li class="menu-item"><a href="#" class="item-link">О компании</a></li>
                     <li class="menu-item"><a href="#" class="item-link">Портфолио</a></li>
                     <li class="menu-item"><a href="#" class="item-link">Команда</a></li>
                     <li class="menu-item"><a href="#" class="item-link">Как мы работаем</a></li>
-                    <li class="menu-item"><a href="#" class="item-link">Отзывы клиентов</a></li>
-                    <li class="menu-item"><a href="#" class="item-link">Оставить заявку</a></li>
-                    <li class="menu-item"><a href="#" class="item-link">+7 (981) 857-46-24</a></li>
+                    <li class="menu-item"><a href="#" class="item-link">Отзывы клиентов</a></li>                    
+                    <li class="menu-item"><a href="#" class="item-link">Оставить заявку</a></li>                                       
                 </ul>                
             </nav>
-            <div class="promo">
-                <h1 class="promo-heading">Поможем сделать 
+            <a href="tel:+79818574624" class="phone">+7 (981) 857-46-24</a>
+        </div>
+        <div class="promo">
+            <h1 class="promo-heading">Поможем сделать 
                     вашу квартиру
                     уютнее</h1>
-                <p>Подбираем текстиль, мебель и аксессуары
-                    под ваш интерьер, находим магазины
-                    и помогаем организовать доставку </p>
-                <a href="#" class="button promo-button">Оставить заявку</a>
-            </div>
-        </div>
+            <p class="promo-description">Подбираем текстиль, мебель и аксессуары
+                    под&nbsp;ваш&nbsp;интерьер, находим магазины
+                    и&nbsp;помогаем&nbsp;организовать доставку</p>
+            <a href="#order-form" class="button order-button">Оставить заявку</a>
+        </div>        
     </header>
 
     <main>
         <section class="advantages">
-            <div class="about_company">
-                <h2 class="advantages_heading">О нас</h2>
-                <img src="img/table_setting.png" alt="Сервировка обеденного стола" width="444" height="572">
-                <p>Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.
+            <h2 class="advantages-heading">О нас</h2>
+            <div class="content-container-small">                
+                <img src="img/table-setting.jpg" alt="Сервировка обеденного стола" width="444" height="572">
+                <p class="advantages-description">Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.
                     Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать:
-                    « Да! Это именно то, что действительно достойно моего дома!»</p>
-            </div>
-            <div class="content-containter">
+                    «Да!&nbsp;Это именно то, что действительно достойно моего дома!»</p>
+            </div>        
+            <div class="content-container">
                 <ul class="advantages-list">
-                    <li class="advantages-item">5 лет опыта</li>
-                    <li class="advantages-item">100 проектов</li>
-                    <li class="advantages-item">10 наград</li>
+                    <li class="advantages-item">
+                        <h3 class="item-heading">5</h3>
+                        <p class="item-text">лет опыта</p>
+                    </li>
+                    <li class="advantages-item">
+                        <h3 class="item-heading">100</h3>
+                        <p class="item-text">проектов</p>
+                    </li>
+                    <li class="advantages-item">
+                        <h3 class="item-heading">10</h3>
+                        <p class="item-text">наград</p>
+                    </li>                    
                 </ul>
-            </div>
+            </div>            
         </section>
 
         <section class="portfolio">
-            <div class="content-container-small">
+            <div class="content-container">
                 <h2 class="portfolio-heading">Наши работы</h2>
                 <div class="portfolio-slider">
-                    <ul class="portfolio-slide">
-                        <li class="slide-item" style="background-image:url(img/flat_background.png)">                        
+                    <ul class="portfolio-slider-list">
+                        <!--<li class="slide-item" style="background-image:url(img/flat_background.png)">                        
                             <a href="#" class="portfolio-link">
                                 <h3>Квартира-студия
                                 30 кв.м.</h3>
                                 <p>В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
                                 на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
                             </a>                                                              
-                        </li>
-                        <li class="slide-item"><img src="img/kitchen.png" alt="Дизайн кухни" width="692" height="451"></li>
-                        <li class="slide-item"><img src="img/room.png" alt="Дизайн кухни" width="692" height="451"></li>
-                        <li class="slide-item"><img src="img/bathroom.png" alt="Дизайн кухни" width="689" height="459"></li>
+                        </li>--> 
+                        <li class="slide-item"><img src="img/flat-background.jpg" alt="Дизайн спальни" width="488" height="451"></li>
+                        <li class="slide-item"><img src="img/kitchen.jpg" alt="Дизайн кухни" width="692" height="451"></li>
+                        <li class="slide-item"><img src="img/room.jpg" alt="Дизайн гостиной" width="692" height="451"></li>
+                        <li class="slide-item"><img src="img/bathroom.png" alt="Дизайн ванной комнаты" width="488" height="451"></li>                        
                     </ul>
                     <div class="portfolio-slider-nav">
-                        <button class="slider-button next">
+                        <button class="button portfolio-button">
                             Смотреть ещё
                             <img src="img/arrow-next.svg" alt="Стрелка вправо" width="60">
                         </button>
-                    </div>
-                    <ul class="portfolio-slide">
-                        <li class="slide-item" style="background-image:url(img/flat_background.png)">                        
-                            <a href="#" class="portfolio-link">
-                                <h3>Квартира-студия
-                                30 кв.м.</h3>
-                                <p>В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
-                                на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
-                            </a>                                                              
-                        </li>
-                        <li class="slide-item"><img src="img/kitchen.png" alt="Дизайн кухни" width="692" height="451"></li>
-                        <li class="slide-item"><img src="img/room.png" alt="Дизайн комнаты" width="692" height="451"></li>
-                        <li class="slide-item"><img src="img/bathroom.png" alt="Дизайн ванной комнаты" width="689" height="459"></li>
-                    </ul>
-                    <div class="portfolio-slider-nav">
-                        <button class="slider-button next">
-                            Смотреть ещё
-                            <img src="img/arrow-next.svg" alt="Стрелка вправо" width="60">
-                        </button>
-                    </div>
+                    </div>                    
                 </div>
             </div>
         </section>
 
         <section class="team">
-            <div class="content-container">
+            <div class="content-container-small">
                 <h2 class="team-heading">Команда</h2>
                 <ul class="team-members-list">
                     <li class="team-member">
-                        <img src="img/masha.png" alt="дизайнер Маша" width="375" height="249">
-                        <p>Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается
-                            и помогает сделать вашу квартиру красивой и уютной.</p>
+                        <img src="img/masha.jpg" alt="дизайнер Маша" class="member-img" width="375" height="249">
+                        <p class="member-description">Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается
+                            и&nbsp;помогает&nbsp;сделать вашу квартиру красивой и уютной.</p>
                     </li>
                     <li class="team-member">
-                        <img src="img/sasha.png" alt="менеджер девушка Саша" width="392" height="261">
-                        <p>С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы
+                        <img src="img/sasha.jpg" alt="менеджер девушка Саша" class="member-img" width="392" height="261">
+                        <p class="member-description">С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы
                             и ответит на все вопросы.</p>
                     </li>
                     <li class="team-member">
-                        <img src="img/katya.png" alt="дизайнер Катя" width="401" height="267">
-                        <p>Катя тоже занимается дизайном.
+                        <img src="img/katya.jpg" alt="дизайнер Катя" class="member-img" width="401" height="267">
+                        <p class="member-description">Катя тоже занимается дизайном.
                             Она всегда находит общий язык
                             с клиентами и точно знает,
                             как обустроить дом так, чтобы вам понравилось.</p>
                     </li>
-                </ul>
+                </ul>                
             </div>            
         </section>
 
@@ -133,22 +130,22 @@
                 <ul class="steps-list">
                     <li class="steps-item">
                       <h3 class="steps-item-heading">1</h3>
-                      <p>Знакомимся, выезжаем
-                        на объект, утверждаем концепцию, подписываем договор.</p>            
+                      <p class="steps-item-description">Знакомимся, выезжаем
+                        на&nbsp;объект, утверждаем концепцию, подписываем договор.</p>            
                     </li>
                     <li class="steps-item">
                         <h3 class="steps-item-heading">2</h3>
-                        <p>Подбираем мебель, текстиль, аксессуары. Делаем 3D-
+                        <p class="steps-item-description">Подбираем мебель, текстиль, аксессуары. Делаем 3D-
                             визуализацию.</p>            
                       </li>
                       <li class="steps-item">
                         <h3 class="steps-item-heading">3</h3>
-                        <p>Находим нужные магазины, помогаем с доставкой
-                            и оплатой товаров.</p>            
+                        <p class="steps-item-description">Находим нужные магазины, помогаем с доставкой
+                            и&nbsp;оплатой товаров.</p>            
                       </li>
                       <li class="steps-item">
                         <h3 class="steps-item-heading">4</h3>
-                        <p>Воплощаем проект в жизнь:
+                        <p class="steps-item-description">Воплощаем проект в жизнь:
                             расставляем мебель и цветы, вешаем шторы, находим места для мелочей</p>            
                       </li>                      
                 </ul>
@@ -156,27 +153,29 @@
         </section>
 
         <section class="reviews">
-            <div class="content-container-smallest">
-                <h2 class="reviews-heading">Отзывы</h2>
+            <h2 class="reviews-heading">Отзывы</h2>
+            <div class="content-container-small">                
                 <div class="reviews-slider">
                     <div class="reviews-slider-nav">
-                        <button class="slider-button left">
+                        <button class="button slider-button left">
                             <img src="img/arrow-left.svg" alt="Стрелка влево" width="32">
                         </button>
                     </div>
                     <ul class="reviews-slider-list">                        
                         <li class="reviews-slide">
-                            <blockquote>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.
-
-                                Работа шла быстро, было очень приятно общаться и взаимодествовать
-                                с сотрудниками. Не ожидала, что это будет так легко!
-                                
-                                Буду советовать и своим друзьям к вам обращаться!»</blockquote>
-                            <cite>АННА БЕЛОВСКАЯ</cite>
-                            <img src="img/living-room.png" alt="Дизайн гостиной" width="407" height="272">
-                            <img src="img/kitchen_review.png" alt="Дизайн кухни" width="408" height="279">                       
+                            <div class="reviews-text">                                
+                                <blockquote>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.
+                                    <br><br>
+                                    Работа шла быстро, было очень приятно общаться и взаимодествовать
+                                    с сотрудниками. Не ожидала, что это будет так легко!
+                                    <br><br>
+                                    Буду советовать и своим друзьям к вам обращаться!»</blockquote>
+                                <cite>АННА БЕЛОВСКАЯ</cite>
+                            </div>                                                           
+                            <img src="img/living-room.png" alt="Дизайн гостиной" class="reviews-image" width="407" height="272">
+                            <img src="img/kitchen_review.png" alt="Дизайн кухни" class="reviews-image" width="408" height="279">                                
                         </li>
-                        <li class="reviews-slide">
+                        <!--<li class="reviews-slide">
                             <blockquote>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.
 
                                 Работа шла быстро, было очень приятно общаться и взаимодествовать
@@ -184,12 +183,14 @@
                                 
                                 Буду советовать и своим друзьям к вам обращаться!»</blockquote>
                             <cite>АННА БЕЛОВСКАЯ</cite>
-                            <img src="img/living-room.png" alt="Дизайн гостиной" width="407" height="272">
-                            <img src="img/kitchen_review.png" alt="Дизайн кухни" width="408" height="279">                       
-                        </li>                    
+                            <div class="reviews-images">                                
+                                <img src="img/living-room.png" alt="Дизайн гостиной" width="407" height="272">
+                                <img src="img/kitchen_review.png" alt="Дизайн кухни" width="408" height="279">
+                            </div>                       
+                        </li>-->                    
                     </ul>
                     <div class="reviews-slider-nav">
-                        <button class="slider-button right">
+                        <button class="button slider-button right">
                             <img src="img/arrow-right.svg" alt="Стрелка вправо" width="32">
                         </button>
                     </div>
@@ -197,23 +198,27 @@
             </div>
         </section>
 
-        <section class="order">
+        <section class="order" id="order-form">
             <div class="content-container">
-                <h2 class="order-heading">Оставить заявку</h2>
-                <p>Оставьте свои контакты. Менеджер перезвонит
-                    в удобное вам время и ответит на все вопросы.</p>
-                <form class="order-form" method="post">
-                    <div class="order-form-group">
-                        <label for="fullname">Ваше имя</label>
-                        <input type="text" name="fullname" id="fullname">
-                    </div>
-                    <div class="order-form-group">
-                        <label for="phone">Введите телефон</label>
-                        <input type="text" name="phone" id="phone">
-                    </div>
-                    <input class="btn" type="submit" value="Оставить заявку">
-                </form>
-                <img src="img/map.png" alt="Карта" width="590" height="624">
+                <div class="order-part">
+                    <h2 class="order-heading">Оставить заявку</h2>
+                    <p class="order-description">Оставьте свои контакты. Менеджер перезвонит
+                        в&nbsp;удобное вам время и ответит на все вопросы.</p>
+                    <form class="order-form" method="post">
+                        <div class="order-form-group">
+                            <label for="fullname">Ваше имя</label>
+                            <input type="text" name="fullname" id="fullname">
+                        </div>
+                        <div class="order-form-group">
+                            <label for="phone">Введите телефон</label>
+                            <input type="text" name="phone" id="phone">
+                        </div>
+                        <input class="button order-button" type="submit" value="Оставить заявку">
+                    </form>
+                </div>
+                <div class="map-part">
+                    <img src="img/map.png" alt="Карта" width="590" height="624">
+                </div>
             </div>
         </section>
 
@@ -222,13 +227,13 @@
                 <nav class="footer-nav">
                     <ul class="footer-nav-list">
                         <li class="footer-nav-item">
-                            <p>+7 (981) 857-46-24</p>
+                            <p class="footer-item-description">+7 (981) 857-46-24</p>
                         </li>
                         <li class="footer-nav-item">
-                            <p>г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
+                            <p class="footer-item-description">г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
                         </li>
                         <li class="footer-nav-item">
-                            <p>ИП Королёва А.А.</p>
+                            <p class="footer-item-description">ИП Королёва А.А.</p>
                         </li>
                     </ul>
                 </nav>             
