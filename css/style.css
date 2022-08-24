@@ -40,12 +40,14 @@ a {
 }
 
 a:hover {
-    opacity: 0.7;
+    opacity: 0.7;/* прозрачность для других браузеров */
+    filter: alpha (Opacity=7);/* прозрачность для IE */
 }
 
 a:focus,
-a:active {
-    opacity: 0.4;
+a:active {    
+    opacity: 0.4;/* прозрачность для других браузеров */
+    filter: alpha (Opacity=4);/* прозрачность для IE */
 }
 
 .button {
@@ -60,25 +62,14 @@ a:active {
 }
 
 .button:hover {
-    opacity: 0.8;
+    opacity: 0.8;/* прозрачность для других браузеров */
+    filter: alpha (Opacity=8);/* прозрачность для IE */    
 }
 
-.button:active {
-    opacity: 0.5;
+.button:active {    
+    opacity: 0.5;/* прозрачность для других браузеров */
+    filter: alpha (Opacity=5);/* прозрачность для IE */
 }
-
-/*.visually-hidden:not(:focus):not(:active) {
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    margin: -1px;
-    padding: 0;
-    width: 1px;
-    height: 1px;
-    border: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-}*/
 
 .content-container {  
     margin: 0 auto;
@@ -107,7 +98,7 @@ a:active {
     width: 1400px;
     height: 715px;
     color: #533738;       
-    background: url(../img/bedroom_background.jpg) no-repeat #F9EAE1;
+    background: url(../img/bedroom-background.jpg) no-repeat #F9EAE1;
     background-origin: border-box;
     background-size: 100% 100%;
 }
@@ -115,7 +106,8 @@ a:active {
 .logo {
     position: absolute;
     top: 32px;
-    left: 100px;    
+    left: 100px;
+    z-index:10;    
 }
 
 .phone {
@@ -140,7 +132,7 @@ a:active {
 }
 
 .menu-item:first-child {
-    margin-left: 100px;
+    margin-left: 130px;
 }
 
 .menu-item:last-child {
@@ -148,7 +140,7 @@ a:active {
 }
 
 .menu-item:nth-child(7n) {
-    margin-left: 100px;
+    margin-left: 130px;
 }
 
 .menu-item:nth-child(6n) {
@@ -271,6 +263,40 @@ a:active {
     margin: 0;
     padding: 0;
     margin-bottom: 40px;    
+}
+
+.slide-item.animate {
+    background: url(../img/flat-background.jpg) no-repeat center;
+}
+
+.hover-info {
+    opacity: 0;
+    display:flex;
+    flex-direction: column;
+    width: 488px;
+    height: 451px;  
+    background: rgba(100, 72, 69, 0.8);
+    color: #FFFFFF;
+}
+.hover-info:hover {
+    opacity:1;
+}
+
+.hover-heading {
+    margin-top: 86px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    max-width: 270px;
+    text-align: center;
+    align-self: center;
+}
+
+.hover-text {
+    margin: 0;
+    max-width: 418px;    
+    align-self: center;
 }
 
 .slide-item:nth-child(odd) {   
@@ -484,14 +510,22 @@ a:active {
     color: #FFFFFF;    
 }
 
-.order-part {
-    color: #FFFFFF;
-    margin-left: 62px;
+.order-part {    
+    margin-left: 82px;
 }
 
-.order-description {    
+.order-description {
     margin: 0;
-    margin-bottom: 44px;
+    margin-bottom: 44px;   
+    color: #FFFFFF;
+    opacity: 0.6;      
+}
+
+.order-form-group {
+    margin: 0;
+    width: 508px;
+    color: #F6EDE9;    
+    border-bottom: 1px solid #FFFFFF;
 }
 
 .order-form-group:first-child {
@@ -501,14 +535,27 @@ a:active {
     margin-bottom: 31px;
 }
 
-.map-part {
-    
+.order-form-group label {
+   padding-right: 5px;
+}
+
+input[type="text"] {
+    width: 60%;
+    border: none;
+    background: #8D7370;
+    padding-bottom: 5px;    
 }
 
 /*Стили для footer*/
 
-.page-footer .content-container {
-    margin-bottom: 37px;
+.page-footer {
+    position: relative; 
+    margin: 0 auto;
+    margin-bottom: 37px;    
+}
+
+.footer-phone {
+    position: absolute;    
 }
 
 .footer-nav-list {
@@ -516,19 +563,12 @@ a:active {
     padding: 0;
     list-style: none;
     display: flex; 
-    flex-wrap: wrap;  
-}
-
-.footer-item-description {
-    margin: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;  
 }
 
 .footer-nav-item:first-child {
-    margin-right: 42px;
-}
-
-.footer-nav-item:last-child {
-    margin-left: 379px;    
+    margin-left: 203px;
 }
 
 

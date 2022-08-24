@@ -13,22 +13,20 @@
 </head>
 
 <body>
-    <header class="page-header">
-        <!--<img src="img/bedroom_background.jpg" alt="Комод рядом с кроватью с предметами декора:
-         вазой с сухими цветами, статуэткой, настольным зеркалм, книгами" class="header-image" width="1416" height="715">-->        
+    <header class="page-header">              
         <div class="content-container">
-            <a class="logo">
-                <img src="img/logo.png" alt="Логотип студии дизайна" width="25" height="25"> 
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Логотип студии дизайна." id="company" width="25" height="25"> 
                 SCANDI
             </a>
             <nav class="menu">
                 <ul class="menu-list">
-                    <li class="menu-item"><a href="#" class="item-link">О компании</a></li>
-                    <li class="menu-item"><a href="#" class="item-link">Портфолио</a></li>
-                    <li class="menu-item"><a href="#" class="item-link">Команда</a></li>
-                    <li class="menu-item"><a href="#" class="item-link">Как мы работаем</a></li>
-                    <li class="menu-item"><a href="#" class="item-link">Отзывы клиентов</a></li>                    
-                    <li class="menu-item"><a href="#" class="item-link">Оставить заявку</a></li>                                       
+                    <li class="menu-item"><a href="#about-company" class="item-link">О компании</a></li>
+                    <li class="menu-item"><a href="#portfolio" class="item-link">Портфолио</a></li>
+                    <li class="menu-item"><a href="#team" class="item-link">Команда</a></li>
+                    <li class="menu-item"><a href="#steps" class="item-link">Как мы работаем</a></li>
+                    <li class="menu-item"><a href="#reviews" class="item-link">Отзывы клиентов</a></li>                    
+                    <li class="menu-item"><a href="#order-form" class="item-link">Оставить заявку</a></li>                                                           
                 </ul>                
             </nav>
             <a href="tel:+79818574624" class="phone">+7 (981) 857-46-24</a>
@@ -45,10 +43,10 @@
     </header>
 
     <main>
-        <section class="advantages">
+        <section class="advantages" id="about-company">
             <h2 class="advantages-heading">О нас</h2>
             <div class="content-container-small">                
-                <img src="img/table-setting.jpg" alt="Сервировка обеденного стола" width="444" height="572">
+                <img src="img/table-setting.jpg" alt="Сервировка обеденного стола." width="444" height="572">
                 <p class="advantages-description">Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.
                     Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать:
                     «Да!&nbsp;Это именно то, что действительно достойно моего дома!»</p>
@@ -71,50 +69,48 @@
             </div>            
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="content-container">
                 <h2 class="portfolio-heading">Наши работы</h2>
                 <div class="portfolio-slider">
-                    <ul class="portfolio-slider-list">
-                        <!--<li class="slide-item" style="background-image:url(img/flat_background.png)">                        
-                            <a href="#" class="portfolio-link">
-                                <h3>Квартира-студия
-                                30 кв.м.</h3>
-                                <p>В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
-                                на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
-                            </a>                                                              
-                        </li>--> 
-                        <li class="slide-item"><img src="img/flat-background.jpg" alt="Дизайн спальни" width="488" height="451"></li>
-                        <li class="slide-item"><img src="img/kitchen.jpg" alt="Дизайн кухни" width="692" height="451"></li>
-                        <li class="slide-item"><img src="img/room.jpg" alt="Дизайн гостиной" width="692" height="451"></li>
-                        <li class="slide-item"><img src="img/bathroom.png" alt="Дизайн ванной комнаты" width="488" height="451"></li>                        
+                    <ul class="portfolio-slider-list">                   
+                        <li class="slide-item animate" style="background-image:url(img/flat-background.jpg)">
+                            <div class="hover-info">
+                                <h3 class="hover-heading">Квартира-студия 30 кв.м.</h3>
+                                <p class="hover-text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
+                                на&nbsp;отсылках&nbsp;к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+                            </div>                    
+                        </li>
+                        <li class="slide-item"><img src="img/kitchen.jpg" alt="Дизайн кухни." width="692" height="451"></li>
+                        <li class="slide-item"><img src="img/room.jpg" alt="Дизайн гостиной." width="692" height="451"></li>
+                        <li class="slide-item"><img src="img/bathroom.jpg" alt="Дизайн ванной комнаты." width="488" height="451"></li>                        
                     </ul>
                     <div class="portfolio-slider-nav">
-                        <button class="button portfolio-button">
+                        <button class="button portfolio-button" type="button">
                             Смотреть ещё
-                            <img src="img/arrow-next.svg" alt="Стрелка вправо" width="60">
+                            <img src="img/arrow-next.svg" alt="Стрелка вправо." width="60">
                         </button>
                     </div>                    
                 </div>
             </div>
         </section>
 
-        <section class="team">
+        <section class="team" id="team">
             <div class="content-container-small">
                 <h2 class="team-heading">Команда</h2>
                 <ul class="team-members-list">
                     <li class="team-member">
-                        <img src="img/masha.jpg" alt="дизайнер Маша" class="member-img" width="375" height="249">
+                        <img src="img/masha.jpg" alt="дизайнер Маша." class="member-img" width="375" height="249">
                         <p class="member-description">Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается
                             и&nbsp;помогает&nbsp;сделать вашу квартиру красивой и уютной.</p>
                     </li>
                     <li class="team-member">
-                        <img src="img/sasha.jpg" alt="менеджер девушка Саша" class="member-img" width="392" height="261">
+                        <img src="img/sasha.jpg" alt="менеджер девушка Саша." class="member-img" width="392" height="261">
                         <p class="member-description">С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы
                             и ответит на все вопросы.</p>
                     </li>
                     <li class="team-member">
-                        <img src="img/katya.jpg" alt="дизайнер Катя" class="member-img" width="401" height="267">
+                        <img src="img/katya.jpg" alt="дизайнер Катя." class="member-img" width="401" height="267">
                         <p class="member-description">Катя тоже занимается дизайном.
                             Она всегда находит общий язык
                             с клиентами и точно знает,
@@ -124,7 +120,7 @@
             </div>            
         </section>
 
-        <section class="steps">
+        <section class="steps" id="steps">
             <div class="content-container">
                 <h2 class="steps-heading">Как мы работаем</h2>
                 <ul class="steps-list">
@@ -152,13 +148,13 @@
             </div>
         </section>
 
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <h2 class="reviews-heading">Отзывы</h2>
             <div class="content-container-small">                
                 <div class="reviews-slider">
                     <div class="reviews-slider-nav">
-                        <button class="button slider-button left">
-                            <img src="img/arrow-left.svg" alt="Стрелка влево" width="32">
+                        <button class="button slider-button left" type="button">
+                            <img src="img/arrow-left.svg" alt="Стрелка влево." width="32">
                         </button>
                     </div>
                     <ul class="reviews-slider-list">                        
@@ -172,26 +168,13 @@
                                     Буду советовать и своим друзьям к вам обращаться!»</blockquote>
                                 <cite>АННА БЕЛОВСКАЯ</cite>
                             </div>                                                           
-                            <img src="img/living-room.png" alt="Дизайн гостиной" class="reviews-image" width="407" height="272">
-                            <img src="img/kitchen_review.png" alt="Дизайн кухни" class="reviews-image" width="408" height="279">                                
-                        </li>
-                        <!--<li class="reviews-slide">
-                            <blockquote>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.
-
-                                Работа шла быстро, было очень приятно общаться и взаимодествовать
-                                с сотрудниками. Не ожидала, что это будет так легко!
-                                
-                                Буду советовать и своим друзьям к вам обращаться!»</blockquote>
-                            <cite>АННА БЕЛОВСКАЯ</cite>
-                            <div class="reviews-images">                                
-                                <img src="img/living-room.png" alt="Дизайн гостиной" width="407" height="272">
-                                <img src="img/kitchen_review.png" alt="Дизайн кухни" width="408" height="279">
-                            </div>                       
-                        </li>-->                    
+                            <img src="img/living-room.jpg" alt="Дизайн гостиной." class="reviews-image" width="407" height="272">
+                            <img src="img/kitchen-from-review.jpg" alt="Дизайн кухни." class="reviews-image" width="408" height="279">                                
+                        </li>                                          
                     </ul>
                     <div class="reviews-slider-nav">
-                        <button class="button slider-button right">
-                            <img src="img/arrow-right.svg" alt="Стрелка вправо" width="32">
+                        <button class="button slider-button right" type="button">
+                            <img src="img/arrow-right.svg" alt="Стрелка вправо." width="32">
                         </button>
                     </div>
                 </div>
@@ -207,17 +190,17 @@
                     <form class="order-form" method="post">
                         <div class="order-form-group">
                             <label for="fullname">Ваше имя</label>
-                            <input type="text" name="fullname" id="fullname">
+                            <input type="text" name="fullname" id="fullname" required>
                         </div>
                         <div class="order-form-group">
                             <label for="phone">Введите телефон</label>
-                            <input type="text" name="phone" id="phone">
+                            <input type="text" name="phone" id="phone" required>
                         </div>
                         <input class="button order-button" type="submit" value="Оставить заявку">
                     </form>
                 </div>
-                <div class="map-part">
-                    <img src="img/map.png" alt="Карта" width="590" height="624">
+                <div class="map-part" id="map">
+                    <img src="img/map.jpg" alt="Карта." width="590" height="624">
                 </div>
             </div>
         </section>
@@ -225,15 +208,13 @@
         <footer class="page-footer">
             <div class="content-container">
                 <nav class="footer-nav">
-                    <ul class="footer-nav-list">
+                    <a href="tel:+79818574624" class="footer-phone">+7 (981) 857-46-24</a>
+                    <ul class="footer-nav-list">                        
                         <li class="footer-nav-item">
-                            <p class="footer-item-description">+7 (981) 857-46-24</p>
+                            <a href="#map" class="address">г. Санкт-петербург, ул. Большая Конюшенная, 19</a>
                         </li>
                         <li class="footer-nav-item">
-                            <p class="footer-item-description">г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
-                        </li>
-                        <li class="footer-nav-item">
-                            <p class="footer-item-description">ИП Королёва А.А.</p>
+                            <a href="#company" class="item-link">ИП Королёва А.А.</a>
                         </li>
                     </ul>
                 </nav>             
